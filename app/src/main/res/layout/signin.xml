@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    >
+
+    <ImageView
+        android:id="@+id/dartmouth_signin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_people"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/loginEntriesSignIn"
+        android:orientation="vertical"
+        android:layout_below="@+id/dartmouth_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/main_editLoginSignIn"
+            android:hint="Enter your username"
+            android:padding="5dp"
+            android:inputType="textVisiblePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/main_editPasswordSignIn"
+            android:hint="Enter your password"
+            android:padding="5dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/loginEntriesSignIn"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_buttonSignIn"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/signup_buttonSignIn"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:padding="20dp"
+            android:text="Sign Up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
